@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.qjmttejada.temperature_converter.LoginFragment"
+        android:label="LOGIN"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.qjmttejada.temperature_converter.HomeFragment"
+        android:label="HOME"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_tutorialFragment"
+            app:destination="@id/tutorialFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_converterFragment"
+            app:destination="@id/converterFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/converterFragment"
+        android:name="com.qjmttejada.temperature_converter.ConverterFragment"
+        android:label="TEMPERATURE CONVERTER"
+        tools:layout="@layout/fragment_converter" />
+    <fragment
+        android:id="@+id/tutorialFragment"
+        android:name="com.qjmttejada.temperature_converter.TutorialFragment"
+        android:label="TUTORIAL"
+        tools:layout="@layout/fragment_tutorial" />
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.qjmttejada.temperature_converter.QuizFragment"
+        android:label="QUIZ"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.qjmttejada.temperature_converter.AboutFragment"
+        android:label="ABOUT"
+        tools:layout="@layout/fragment_about" />
+</navigation>

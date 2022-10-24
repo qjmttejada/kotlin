@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Temperature Converter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="textResult">0.0</string>
+    <string name="textResultType">Celsius</string>
+    <string name="textResult2">0.0</string>
+    <string name="textResultType2">Kelvin</string>
+    <string name="celsius">Celsius</string>
+    <string name="kelvin">Kelvin</string>
+</resources>

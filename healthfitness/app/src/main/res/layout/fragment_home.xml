@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.qjmttejada.healthfitness.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/homeConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnContent1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/gradient_button_light"
+            android:text="content1"
+            android:textColor="#FAFAFA"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtApp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnContent2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gradient_button_light"
+            android:text="content2"
+            android:textColor="#FAFAFA"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnContent1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnContent3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gradient_button_light"
+            android:text="content3"
+            android:textColor="#FAFAFA"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnContent2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txtApp"
+            android:layout_width="293dp"
+            android:layout_height="193dp"
+            android:layout_marginTop="20dp"
+            android:text="Health Fitness"
+            android:textAlignment="center"
+            android:textColor="#2E069E"
+            android:textSize="70sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="173dp"
+            android:layout_height="157dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/fitness_logo_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

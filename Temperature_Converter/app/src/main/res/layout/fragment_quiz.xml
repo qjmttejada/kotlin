@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.qjmttejada.temperature_converter.QuizFragment">
+<ScrollView
+    android:id="@+id/quiz_ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/quizConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/quiz_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Answer the following questions"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/quiz_instructions"
+            android:layout_width="367dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="24dp"
+            android:text="Convert the following temperature to its corresponding unit"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_title" />
+
+        <TextView
+            android:id="@+id/quiz_instructions2"
+            android:layout_width="328dp"
+            android:layout_height="38dp"
+            android:text="Choose the correct answer. After answering all questions, click submit "
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.265"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_instructions" />
+
+
+        <TextView
+            android:id="@+id/quiz_Q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="1. What is 45.23 °C in Fahrenheit?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.128"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_instructions2" />
+
+        <RadioGroup
+            android:id="@+id/quiz_choices1"
+            android:layout_width="157dp"
+            android:layout_height="146dp"
+            android:layout_marginStart="-180dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_Q1">
+
+            <RadioButton
+                android:id="@+id/q1_c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="123.34 °F" />
+
+            <RadioButton
+                android:id="@+id/q1_c2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="113.41 °F" />
+
+            <RadioButton
+                android:id="@+id/q1_c3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="104.67 °F" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/quiz_Q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="2. What is 452.82 K in Celsius?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_choices1" />
+
+        <RadioGroup
+            android:id="@+id/quiz_choices2"
+            android:layout_width="157dp"
+            android:layout_height="146dp"
+            android:layout_marginStart="-180dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_Q2">
+
+            <RadioButton
+                android:id="@+id/q2_c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="179.67 °C" />
+
+            <RadioButton
+                android:id="@+id/q2_c2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="163.47 °C" />
+
+            <RadioButton
+                android:id="@+id/q2_c3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="159.08 °C" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/quiz_Q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="3. What is 102.05 °F in Celsius?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.118"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_choices2" />
+
+        <RadioGroup
+            android:id="@+id/quiz_choices3"
+            android:layout_width="157dp"
+            android:layout_height="146dp"
+            android:layout_marginStart="-180dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_Q3">
+
+            <RadioButton
+                android:id="@+id/q3_c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="38.92 °C" />
+
+            <RadioButton
+                android:id="@+id/q3_c2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="42.63 °C" />
+
+            <RadioButton
+                android:id="@+id/q3_c3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="39.42 °C" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/quiz_Q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="4. What is 265.37 °F in Kelvin?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_choices3" />
+
+        <RadioGroup
+            android:id="@+id/quiz_choices4"
+            android:layout_width="157dp"
+            android:layout_height="146dp"
+            android:layout_marginStart="-180dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_Q4">
+
+            <RadioButton
+                android:id="@+id/q4_c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="404.80 K" />
+
+            <RadioButton
+                android:id="@+id/q4_c2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="399.80 K" />
+
+            <RadioButton
+                android:id="@+id/q4_c3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="402.80 K" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/quiz_Q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="5. What is 52.40 °C in Kelvin?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_choices4" />
+
+        <RadioGroup
+            android:id="@+id/quiz_choices5"
+            android:layout_width="157dp"
+            android:layout_height="146dp"
+            android:layout_marginStart="-180dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_Q5">
+
+            <RadioButton
+                android:id="@+id/q5_c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="315.55 K" />
+
+            <RadioButton
+                android:id="@+id/q5_c2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="325.55 K" />
+
+            <RadioButton
+                android:id="@+id/q5_c3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="335.55 K" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit_Quiz"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/gradient_blue"
+            android:text="SUBMIT"
+            android:textColor="#FAFAFA"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_choices5"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</layout>

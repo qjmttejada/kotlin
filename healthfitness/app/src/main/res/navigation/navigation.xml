@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.qjmttejada.healthfitness.LoginFragment"
+        android:label="LOGIN"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.qjmttejada.healthfitness.HomeFragment"
+        android:label="HOME"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_content1Fragment"
+            app:destination="@id/content1Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_content3Fragment"
+            app:destination="@id/content3Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_content2Fragment"
+            app:destination="@id/content2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.qjmttejada.healthfitness.RegistrationFragment"
+        android:label="REGISTRATION"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/content1Fragment"
+        android:name="com.qjmttejada.healthfitness.Content1Fragment"
+        android:label="CONTENT1"
+        tools:layout="@layout/fragment_content1" />
+    <fragment
+        android:id="@+id/content2Fragment"
+        android:name="com.qjmttejada.healthfitness.Content2Fragment"
+        android:label="CONTENT2"
+        tools:layout="@layout/fragment_content2" />
+    <fragment
+        android:id="@+id/content3Fragment"
+        android:name="com.qjmttejada.healthfitness.Content3Fragment"
+        android:label="CONTENT3"
+        tools:layout="@layout/fragment_content3" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.qjmttejada.healthfitness.AboutFragment"
+        android:label="ABOUT"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/FAQFragment"
+        android:name="com.qjmttejada.healthfitness.FAQFragment"
+        android:label="FAQ"
+        tools:layout="@layout/fragment_f_a_q" />
+</navigation>

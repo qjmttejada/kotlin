@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Fare Calculator</string>
+    <string name="total_fare">Total Fare: %s</string>
+</resources>
